@@ -9,28 +9,73 @@
 <ion-content>
   <ion-grid>
     <p class="ion-text-center" style="font-size: 25px">Sign Up</p>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <ion-item>
+        <ion-input
+          placeholder="Username"
+          ngModel
+          name="name"
+          type="text"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          placeholder="Email"
+          ngModel
+          name="email"
+          type="email"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          placeholder="Password"
+          type="password"
+          ngModel
+          required
+          minlength="6"
+          name="password"
+          #passwordField="ngModel"
+        ></ion-input>
+      </ion-item>
+      <ion-item
+        *ngIf="passwordField.touched && !passwordField.valid"
+        lines="none"
+      >
+        <ion-text color="danger"
+          >Password should be at least 6 characters</ion-text
+        >
+      </ion-item>
+      <ion-item>
+        <ion-input
+          placeholder="Confirm password"
+          type="password"
+          ngModel
+          name="confirmPassword"
+          required
+        ></ion-input>
+      </ion-item>
 
-    <ion-list>
-      <ion-item>
-        <ion-input placeholder="Username" [(ngModel)]="username"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="Confirm password" type="password" [(ngModel)]="conpassword"></ion-input>
-      </ion-item>
-    </ion-list>
-    <br />
-    <ion-button expand="block" (click)="signup()">Sign Up</ion-button>
+      <ion-button
+        type="submit"
+        color="warning"
+        expand="block"
+        [disabled]="!form.valid"
+      >
+        Sign Up
+      </ion-button>
+    </form>
 
     <ion-row>
       <ion-col>
         <div class="ion-text-center">
-          <p style="font-size: 15px">Already have an account? <a rel="noopener noreferrer" routerLink="/amuuses/logins">Login</a></p>
+          <p style="font-size: 15px">
+            Already have an account?
+            <a rel="noopener noreferrer" routerLink="/amuuses/logins">Login</a>
+          </p>
         </div>
       </ion-col>
     </ion-row>
-
   </ion-grid>
 </ion-content>

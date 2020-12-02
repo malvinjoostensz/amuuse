@@ -17,25 +17,17 @@ const routes: Routes = [
     loadChildren: () => import('./signups/signups.module').then( m => m.SignupsPageModule)
   },
   {
-    path: 'findyourstars',
-    loadChildren: () => import('./findyourstars/findyourstars.module').then( m => m.FindyourstarsPageModule)
-  },
-  {
-    path: 'yourbookings',
-    loadChildren: () => import('./yourbookings/yourbookings.module').then( m => m.YourbookingsPageModule)
-  },
-  {
-    path: 'becomeastars',
-    loadChildren: () => import('./becomeastars/becomeastars.module').then( m => m.BecomeastarsPageModule)
-  },
-  {
-    path: 'yourstarprofiles',
-    loadChildren: () => import('./yourstarprofiles/yourstarprofiles.module').then( m => m.YourstarprofilesPageModule)
-  },
-  {
     path: 'helps',
     loadChildren: () => import('./helps/helps.module').then( m => m.HelpsPageModule)
-  }
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'abouts',
+    loadChildren: () => import('./abouts/abouts.module').then( m => m.AboutsPageModule)
+  },
 ];
 
 @NgModule({

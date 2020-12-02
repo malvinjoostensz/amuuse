@@ -16,29 +16,21 @@
     <ion-content>
       <ion-list>
         <ion-menu-toggle menu="amuusesMenu">
-          <ion-item lines="none" routerLink="/tabs/tab3">
-            <ion-icon name="search" slot="start"></ion-icon>
-            <ion-label>Find Your Stars</ion-label>
+          <ion-item lines="none" href="https://www.paypal.com/paypalme/vaserlatigo">
+            <ion-icon name="logo-paypal" slot="start"></ion-icon>
+            <ion-label>Donate</ion-label>
           </ion-item>
         </ion-menu-toggle>
+      </ion-list>
+      <ion-list>
         <ion-menu-toggle menu="amuusesMenu">
-          <ion-item lines="none" routerLink="/tabs/tab1">
-            <ion-icon name="book" slot="start"></ion-icon>
-            <ion-label>Your Bookings</ion-label>
+          <ion-item lines="none" routerLink="/amuuses/settings">
+            <ion-icon name="settings" slot="start"></ion-icon>
+            <ion-label>Settings</ion-label>
           </ion-item>
         </ion-menu-toggle>
-        <ion-menu-toggle menu="amuusesMenu">
-          <ion-item lines="none" routerLink="/tabs/tab5">
-            <ion-icon name="accessibility" slot="start"></ion-icon>
-            <ion-label>Become a Star</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-        <ion-menu-toggle menu="amuusesMenu">
-          <ion-item lines="none" routerLink="/tabs/tab4">
-            <ion-icon name="person" slot="start"></ion-icon>
-            <ion-label>Your Star Profiles</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
+      </ion-list>
+      <ion-list>
         <ion-menu-toggle menu="amuusesMenu">
           <ion-item lines="none" routerLink="/amuuses/helps">
             <ion-icon name="help" slot="start"></ion-icon>
@@ -48,7 +40,7 @@
       </ion-list>
     </ion-content>
     <ion-menu-toggle menu="amuusesMenu">
-      <ion-item lines="none" routerLink="/amuuses">
+      <ion-item lines="none" (click)="onLogout()">
         <ion-icon name="exit" slot="start"></ion-icon>
         <ion-label>Log out</ion-label>
       </ion-item>
@@ -56,7 +48,7 @@
     <ion-row>
       <ion-col>
         <div class="ion-text-center">
-          <p style="font-size: 10px">Poggers version 1.0.1 </p>
+          <p style="font-size: 10px">Poggers version 1.0.4 </p>
         </div>
       </ion-col>
     </ion-row>

@@ -9,13 +9,13 @@ export class Tab4Service {
     {
       id: 'p1',
       title: 'K-wave',
-      imageUrl: 'https://international-home.net/wp-content/uploads/2020/01/146031.png',
+      imageUrl: 'https://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Man-16-icon.png',
       category: 'Korean Dance Group'
     },
     {
       id: 'p2',
       title: 'Backstreet Guys',
-      imageUrl: 'https://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Man-16-icon.png',
+      imageUrl: 'https://international-home.net/wp-content/uploads/2020/01/146031.png',
       category: 'Band Group'
     }
   ];

@@ -4,9 +4,9 @@
       <ion-menu-button menu="amuusesMenu"></ion-menu-button>
     </ion-buttons>
     <ion-buttons slot="primary">
-      <ion-item lines="none" routerLink="/amuuses/logins">
+      <ion-item lines="none" routerLink="/amuuses/abouts">
         <ion-avatar slot="end">
-          <img src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" />
+          <img src="https://instagram.fcgk25-1.fna.fbcdn.net/v/t51.2885-19/s320x320/123412094_348183606482457_7663730510940140418_n.jpg?_nc_ht=instagram.fcgk25-1.fna.fbcdn.net&_nc_ohc=RiaVjnJ8FdgAX98PGr0&tp=1&oh=2683598e3275ad4d2644e270574c6351&oe=5FEC0417" />
         </ion-avatar>
       </ion-item>
     </ion-buttons>
@@ -14,35 +14,45 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 4</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div>
+    <p class="ion-text-center" style="font-size: 25px">Become a Stars</p>
+    <form #form="ngForm">
+      <ion-grid>
+        <ion-row>
+          <ion-col size-sm="6" offset-sm="3">
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked">What is your stage name?</ion-label>
+              <ion-input type="email" ngModel name="email" required email #emailField="ngModel"></ion-input>
+            </ion-item>
 
-<!--  <app-explore-container name="Tab 4 page"></app-explore-container>-->
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked">What do you consider yourself as?</ion-label>
+              <ion-input type="text" name="password" ngModel required minlength="6" #passwordField="ngModel"></ion-input>
+            </ion-item>
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked">What is your talent?</ion-label>
+              <ion-select placeholder="Select One" value="music">
+                <ion-select-option value="music">Music</ion-select-option>
+                <ion-select-option value="dance">Dance</ion-select-option>
+                <ion-select-option value="comedy">Comedy</ion-select-option>
+                <ion-select-option value="magic">Magic</ion-select-option>
+                <ion-select-option value="youtuber">YouTuber</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item class="ion-margin-bottom">
+              <ion-label position="stacked">What are you guys about?</ion-label>
+              <ion-textarea rows="6"></ion-textarea>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
 
-  <ion-grid>
-    <p class="ion-text-center" style="font-size: 25px">Your Star Profiles</p>
-    <ion-row>
-      <ion-col size="12" size-sm="8" offset-sm="2">
-        <ion-list>
-          <ion-item *ngFor="let ta4 of tab4" [routerLink]="['./', ta4.id]">
-            <ion-col>
-              <ion-img [src]="ta4.imageUrl"></ion-img>
-            </ion-col>
-            <ion-label>
-              <ion-card-title> {{ ta4.title }} </ion-card-title>
-              <ion-card-subtitle> {{ ta4.category }} </ion-card-subtitle>
-              <div class="ion-text-justify">
-                <ion-button color="warning">View Profile</ion-button>
-              </div>
-            </ion-label>
-          </ion-item>
-        </ion-list>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <!-- ini link ke Booking -->
+  <ion-button color="warning" expand="block">
+    Submit
+  </ion-button>
 
   <ion-fab horizontal="end" vertical="bottom" slot="fixed">
     <ion-fab-button color="dark">
@@ -61,7 +71,7 @@
       <ion-fab-button color="light" href="https://wa.me/6287878390409">
         <ion-icon name="logo-whatsapp"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button color="light" href="https://discord.gg/h5aGKW5s">
+      <ion-fab-button color="light" href="https://discord.gg/UVd29GeKev">
         <ion-icon name="logo-discord"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
