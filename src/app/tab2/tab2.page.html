@@ -17,7 +17,11 @@
   <ion-grid>
     <p class="ion-text-center" style="font-size: 25px">Find Your Stars</p>
     <!-- Comments Malvin: belum bisa untuk search-->
-    <ion-searchbar color="warning"></ion-searchbar>
+    <ion-searchbar
+      color="warning"
+      showCancelButton="focus"
+      cancelButtonText="Custom Cancel">
+    </ion-searchbar>
     <p class="ion-text-center" style="font-size: 18px">Categories</p>
     <ion-grid>
           <ion-slides pager="true" [options]="slideOpts">
