@@ -19,8 +19,8 @@
     <ion-row>
       <ion-col style="display: flex;">
 
-        <ion-avatar><img [src]="loadedprofile.imageUrl"></ion-avatar>
-        <h3>{{loadedprofile.title}}</h3>
+        <ion-avatar><img [src]="loadedprofile2.imageUrl"></ion-avatar>
+        <h3>{{loadedprofile2.title}}</h3>
         <ion-button color="warning" style="margin-left: auto;" shape="round" routerLink="/tabs/tab1">Hire</ion-button>
       </ion-col>
       <ion-segment [(ngModel)]="selectTabs">
@@ -36,7 +36,7 @@
 
   <div *ngIf="selectTabs == 'profile'">
     <h3>About</h3>
-    <h4>{{loadedprofile.aboutus}}</h4>
+    <h4>{{loadedprofile2.aboutus}}</h4>
   </div>
 
   <div *ngIf="selectTabs == 'review'">
@@ -48,7 +48,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img [src]="loadedprofile.imageUrl">
+            <img [src]="loadedprofile2.imageUrl">
           </ion-avatar>
           <ion-label>
             <h2>Finn</h2>
@@ -59,7 +59,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img [src]="loadedprofile.imageUrl">
+            <img [src]="loadedprofile2.imageUrl">
           </ion-avatar>
           <ion-label>
             <h2>Han</h2>
@@ -70,7 +70,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img [src]="loadedprofile.imageUrl">
+            <img [src]="loadedprofile2.imageUrl">
           </ion-avatar>
           <ion-label>
             <h2>Rey</h2>
@@ -81,7 +81,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img [src]="loadedprofile.imageUrl" >
+            <img [src]="loadedprofile2.imageUrl" >
           </ion-avatar>
           <ion-label>
             <h2>Luke</h2>
@@ -94,4 +94,3 @@
     <ion-button  style="margin-left: auto;"><ion-icon name="add-outline"></ion-icon></ion-button>
   </div>
 </ion-content>
-

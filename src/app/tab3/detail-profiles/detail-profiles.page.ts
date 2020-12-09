@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Ta2 } from 'src/app/tab2/ta2.model';
+import { Tab2Service } from 'src/app/tab2/tab2.service';
 import {Ta3} from '../ta3.model';
 import {Tab3Service} from '../tab3.service';
 

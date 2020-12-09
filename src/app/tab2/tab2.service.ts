@@ -10,25 +10,29 @@ export class Tab2Service {
       id: 'p1',
       title: 'BLACKPINK',
       imageUrl: 'https://cdn.discordapp.com/attachments/776261488541302808/784663555823501372/filename_3.jpg',
-      category: 'Korean Dance Group'
+      category: 'Korean Dance Group',
+      aboutus:''
     },
     {
       id: 'p2',
       title: 'The Beatles',
       imageUrl: 'https://cdn.discordapp.com/attachments/776261488541302808/784662582061170718/filename_2.jpg',
-      category: 'Band Group'
+      category: 'Band Group',
+      aboutus:''
     },
     {
       id: 'p3',
       title: 'JabbaWockeez',
       imageUrl: 'https://cdn.discordapp.com/attachments/776261488541302808/784664500594540544/filename_4.jpg',
-      category: 'Dance Group'
+      category: 'Dance Group',
+      aboutus:''
     },
     {
       id: 'p4',
       title: 'Deddy Corbuzier',
       imageUrl: 'https://cdn.discordapp.com/attachments/776261488541302808/784661903276244992/filename_1.jpg',
-      category: 'Magician'
+      category: 'Magician',
+      aboutus:''
     }
   ];
   constructor() { }

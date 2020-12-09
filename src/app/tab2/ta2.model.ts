@@ -3,4 +3,5 @@ export interface Ta2 {
     title: string;
     imageUrl: string;
     category: string;
+    aboutus:string;
 }
